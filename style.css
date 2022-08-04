@@ -6,12 +6,13 @@
     --light-grey: #C8C8C8;
     --text-color: #9C9AB6;
     font-family: 'Poppins', sans-serif;
+    height: 100%;
 }
 
 body {
     margin: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 span {
@@ -23,8 +24,16 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
 }
 
 .header {
@@ -38,13 +47,13 @@ span {
 
 .content {
     width: 100%;
-    height: auto;
+    height: 57%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    position: absolute;
-    margin-top: 10em;
+
+    /* margin: 10em; */
 }
 
 .footer {
@@ -58,7 +67,6 @@ span {
 .container {
     width: 100vw;
     height: auto;
-    margin: 0px 30px 0px 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -107,33 +115,22 @@ span {
 }
 
 .figure {
+    height: 100%;
     width: 100%;
-    height: 58vh;
-    background-size: 80%;
     background-image: url(assets/rocket.svg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media screen and (max-width: 1024px) {
-
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
-
+    
     span {
         margin-right: 15px;
         margin-left: 25px;
     }
 
-    .container {
-        margin: 0px;
-    }
-
     .content {
-        width: 100%;
-        display: flex;
+        align-items: center;
     }
 
     .titule {
@@ -149,36 +146,51 @@ span {
         color: #4D4C59;
     }
 
+    .text{
+        text-align: center;
+    }
+
+    .figure{
+        background-size: 90%;
+        background-position: center;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .content{
+        flex-direction: column-reverse;
+    }
+
+    #timer {
+        font-size: 40px;
+        font-weight: 400;
+        color: #4D4C59;
+    }
+
     .figure {
-        width: 0vw;
-        height: 0vh;
-        background-image: none;
+        background-image: url(assets/rocket.svg);
+        background-size: contain;
+    }
+
+    .text {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 332px) {
 
-    .main {
-        width: 100vw;
-        height: 100vh;
+    span {
+        margin-right: 10px;
+        margin-left: 15px;
     }
 
-    .container {
-        margin: 0px;
+    .titule {
+        font-size: 15px;
     }
 
-    .content {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .figure {
-        width: 50vw;
-        height: 18vh;
-        background-image: url(assets/rocket.svg);
-        background-size: 100%;
+    .text {
+        font-size: 12px;
     }
 }
