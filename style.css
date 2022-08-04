@@ -39,10 +39,10 @@ span {
 .header {
     background-image: url(assets/top-image.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-bottom: 20px;
-    height: 20vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .content {
@@ -52,16 +52,15 @@ span {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-
-    /* margin: 10em; */
 }
 
 .footer {
     background-image: url(assets/bottom-image.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vh;
-    width: 100vw;
+    background-size: contain;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -159,6 +158,7 @@ span {
     .content{
         flex-direction: column-reverse;
     }
+
 
     #timer {
         font-size: 40px;
