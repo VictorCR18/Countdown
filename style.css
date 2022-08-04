@@ -112,6 +112,7 @@ span {
 
 .text {
     color: #9C9AB6;
+    text-align: center;
 }
 
 .figure {
@@ -144,10 +145,6 @@ span {
         font-size: 50px;
         font-weight: 400;
         color: #4D4C59;
-    }
-
-    .text{
-        text-align: center;
     }
 
     .figure{
