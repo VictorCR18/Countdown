@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100vh;
+    height: 100vh;
+}
+
+span {
+    margin-right: 30px;
+    margin-left: 51px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-image: url(assets/top-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 20vh;
+    width: 100vw;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    margin-top: 10em;
+}
+
+.footer {
+    background-image: url(assets/bottom-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    margin: 0px 30px 0px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titule {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #6C63FF;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: #C8C8C8;
+    font-weight: 300;
+}
+
+#timer {
+    font-size: 70px;
+    font-weight: 400;
+    color: #4D4C59;
+}
+
+.button {
+    width: 140px;
+    height: 40px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #6C63FF;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #6C63FF;
+    border: #6C63FF solid 2px;
+}
+
+.text {
+    color: #9C9AB6;
+}
+
+.figure {
+    width: 100%;
+    height: 58vh;
+    background-size: 80%;
+    background-image: url(assets/rocket.svg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    span {
+        margin-right: 15px;
+        margin-left: 25px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+    }
+
+    .titule {
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: #6C63FF;
+        font-size: 20px;
+    }
+
+    #timer {
+        font-size: 50px;
+        font-weight: 400;
+        color: #4D4C59;
+    }
+
+    .figure {
+        width: 0vw;
+        height: 0vh;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        margin: 0px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .figure {
+        width: 50vw;
+        height: 18vh;
+        background-image: url(assets/rocket.svg);
+        background-size: 100%;
+    }
+}
