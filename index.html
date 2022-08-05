@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div class="main">
         <div class="header"></div>
         <div class="box">
@@ -25,15 +24,39 @@
                     </div>
                     <div id="timer"></div>
                     <p class="text">Inscreva-se para saber mais sobre o laçamento</p>
-                    <button class="button">Inscreva-se</button>
+                    <button id="button">Inscreva-se</button>
                 </div>
-                <div class="figure"></div>
+                <div class="figure">
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modal" class="open-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-container">
+                        <div class="form-header">
+                            <h1>Cadastar</h1>
+                        </div>
+                        <form class="form" action="">
+                            <div class="form-content">
+                                <label for="name">Nome:</label>
+                                <input id="name" type="text" placeholder="Didite seu nome..." maxlength="255" required>
+                                <label for="email">E-mail:</label>
+                                <input id="email" type="email" placeholder="Digite seu e-mail..." maxlength="255"
+                                    minlength="7" required>
+                                <label for="contate">Contato:</label>
+                                <input id="contate" type="tel" placeholder="Didite seu número..." maxlength="15"
+                                    minlength="13" title="Número invalido" required>
+                                <button type="submit" id="bnt" class="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="footer"></div>
     </div>
-
     <script src="scripts.js"></script>
 </body>
 
