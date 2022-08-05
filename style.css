@@ -236,6 +236,10 @@ input {
         width: 70%;
     }
 
+    .form-header{
+        padding: 0px;
+    }
+
     .form-content {
         margin-right: 30px;
         margin-left: 30px;
