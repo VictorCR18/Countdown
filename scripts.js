@@ -40,14 +40,26 @@ const modalFuction = (event) => {
         modal.style.display = "none";
     }
 
-    submit.onclick = function () {
-        alert("Enviado com sucesso!");
-    }
-
     // When the user clicks anywhere outside of the modal, close it
     if (event.target == modal) {
         modal.style.display = "none";
     }
+
+    let name = document.getElementById('name')
+    let email = document.getElementById('email');
+    let contate = document.getElementById('contate');
+
+    contate.textConten = " ";
+
+    if (name.value && email.value != "") {
+        submit.onclick = function () {
+            alert("Enviado com sucesso!");
+        }
+    }
+
+    console.log(name.value)
+    console.log(email.value)
+    console.log(contate.value)
 }
 
 window.onclick = function (event) {
