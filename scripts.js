@@ -49,9 +49,7 @@ const modalFuction = (event) => {
     let email = document.getElementById('email');
     let contate = document.getElementById('contate');
 
-    contate.textConten = " ";
-
-    if (name.value && email.value != "") {
+    if (name.value && email.value && contate.value != "") {
         submit.onclick = function () {
             alert("Enviado com sucesso!");
         }

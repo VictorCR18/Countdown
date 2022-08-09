@@ -86,7 +86,7 @@ input {
     align-items: center;
 }
 
-.titule {
+.title {
     font-weight: 700;
     letter-spacing: 5px;
     color: #6C63FF;
@@ -213,7 +213,7 @@ input {
         align-items: center;
     }
 
-    .titule {
+    .title {
         font-weight: 700;
         letter-spacing: 5px;
         color: #6C63FF;
@@ -276,7 +276,7 @@ input {
         margin-left: 15px;
     }
 
-    .titule {
+    .title {
         font-size: 15px;
     }
 
